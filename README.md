@@ -1,4 +1,4 @@
-# txtai Demo to Surface Semantically Similar Content in MD 
+# txtai Demo to Surface Semantically Similar Content in Markdown File 
 Find Semantic Similarities in Chunked MD via txtmd
 
 A common problem with technical documentation management is that doc teams tend have a lot of stressed-out contributors working on shared content over an extended period of time that may be scattered across multiple departments. These factors often lead to content bloat and redundancy. 
