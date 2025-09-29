@@ -13,7 +13,7 @@ Tigers are solitary hunters that prey on deer, wild boar, water buffalo, and oth
 
 ## What Tigers Say
 
-Trump sucks. No Kings!
+No Kings!
 
 ## Bears
 
@@ -28,7 +28,7 @@ Bears are generally omnivores, with diets varying by species and season. They ma
 
 ### What Bears Say
 
-Trump sucks. No Kings!
+No Kings!
 
 ### Ice Cream
 
