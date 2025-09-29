@@ -72,15 +72,15 @@ def generate_similarity_report(index_path="index", report_file="similarity_repor
         for cid, text, meta, vec in zip(ids, texts, metas, vectors)
     }
 
-    report_lines = ["# 📊 Paragraph-to-Paragraph Semantic Similarity Report (Clustered)", ""]
+    report_lines = ["# 📊 p-to-p Semantic Similarity Report (Clustered)", ""]
 
     for cluster_id, cluster in enumerate(clusters, 1):
         report_lines.append(f"---\n")
         report_lines.append(f"## 🔹 Similarity Cluster {cluster_id}")
         report_lines.append(f"**Cluster contains {len(cluster)} paragraphs**\n")
 
-        # List all paragraphs in the cluster
-        for cid in cluster:
+        # List all paragraphs in the cluster with --- separators between them
+        for idx, cid in enumerate(cluster):
             text, meta, _ = chunk_map[cid]
             preview = text.replace("\n", " ")[:200] + ("..." if len(text) > 200 else "")
             breadcrumb = meta.get("breadcrumb", "")
@@ -92,8 +92,12 @@ def generate_similarity_report(index_path="index", report_file="similarity_repor
             report_lines.append(f"**Preview (200 chars):** {preview}")
             report_lines.append("")
 
+            # Add separator between paragraph entries, but not after the last one
+            if idx < len(cluster) - 1:
+                report_lines.append("---")
+
         # Pairwise similarity scores
-        report_lines.append("### Pairwise Vector Similarities")
+        report_lines.append("\n### Pairwise Vector Similarities")
         cluster_ids = list(cluster)
         for i in range(len(cluster_ids)):
             for j in range(i + 1, len(cluster_ids)):
