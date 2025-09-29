@@ -14,13 +14,11 @@ The processing is straightforward:
 # Windows Setup Guide for Markdown + txtai Pipeline
 
 ## 1. Install Python
-- Download Python 3.11 or 3.12 from https://www.python.org/downloads/windows/
-- During installation, check "Add Python to PATH".
 
 Verify install in PowerShell:
     python --version
 
-## 2. Create Virtual Environment (recommended)
+## 2. Create Virtual Environment in project folder (recommended)
     python -m venv venv
     .\venv\Scripts\activate
 
