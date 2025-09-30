@@ -3,7 +3,7 @@ Find Semantic Similarities in Chunked MD via txtmd
 
 A common problem with technical documentation management is that doc teams tend have a lot of stressed-out contributors working on shared content over an extended period of time that may be scattered across multiple departments. These factors often lead to content bloat and redundancy. 
 
-To avoid junk in/out, my content needs some custodial refactoring like deduping and merging similar content if possible. Eventually, I'd like to contain our content in a local LLM for RAG purposes. In taking baby steps toward that goal, I've put together a prototype that surfaces semantically same or similar chunks in the form of a report, using a simple Markdown file as input.
+To avoid junk in/out, content often needs some custodial refactoring like deduping and/or merging similar content. (Eventually, I'd like to contain our content in a local LLM for RAG purposes.) In taking baby steps toward that goal, I've put together a prototype that surfaces semantically same or similar chunks in the form of a report, using a simple Markdown file as input.
 
 The processing is straightforward:
 
